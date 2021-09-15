@@ -2,7 +2,7 @@
 
 #include "MultiObjectExample.h"
 #include "DrawDebugHelpers.h"
-#include "VarDump.h" // for installed plugin, use "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
+#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
 
 // Sets default values
 AMultiObjectExample::AMultiObjectExample()

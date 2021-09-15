@@ -7,7 +7,7 @@
 #include "DumpExample.generated.h"
 
 UCLASS()
-class VARDUMPPLUGINPROJECT_API ADumpExample : public AActor
+class VARDUMPEXAMPLES_API ADumpExample : public AActor
 {
 	GENERATED_BODY()
 	

@@ -7,7 +7,7 @@
 #include "MultiObjectExample.generated.h"
 
 UCLASS()
-class VARDUMPPLUGINPROJECT_API AMultiObjectExample : public AActor
+class VARDUMPEXAMPLES_API AMultiObjectExample : public AActor
 {
 	GENERATED_BODY()
 	
