@@ -7,14 +7,16 @@
 		{
 			"Name": "VarDumpExamples",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
 		{
 			"Name": "VarDump",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/a5fcd17ba7e847f186f780aec4cfa4e1"
+			"Enabled": true
 		}
 	]
 }

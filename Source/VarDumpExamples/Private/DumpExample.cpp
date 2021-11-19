@@ -1,7 +1,8 @@
 // Copyright 2021, João P. B. Socas. All Rights Reserved.
 
 #include "DumpExample.h"
-#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
+//#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
+#include "VarDump.h"
 
 // Sets default values
 ADumpExample::ADumpExample()

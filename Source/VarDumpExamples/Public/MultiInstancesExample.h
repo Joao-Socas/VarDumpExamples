@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MultiObjectExample.generated.h"
+#include "MultiInstancesExample.generated.h"
 
 UCLASS()
-class VARDUMPEXAMPLES_API AMultiObjectExample : public AActor
+class VARDUMPEXAMPLES_API AMultiInstancesExample : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AMultiObjectExample();
+	AMultiInstancesExample();
 
 protected:
 	// Called when the game starts or when spawned

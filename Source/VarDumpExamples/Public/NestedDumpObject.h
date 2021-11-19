@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "UpdateExample.generated.h"
+#include "NestedDumpObject.generated.h"
 
 UCLASS()
-class VARDUMPEXAMPLES_API AUpdateExample : public AActor
+class VARDUMPEXAMPLES_API ANestedDumpObject : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AUpdateExample();
+	ANestedDumpObject();
 
 protected:
 	// Called when the game starts or when spawned
@@ -24,5 +24,5 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	FTransform MyTransform;
 	float SecondsCounter = 0;
-	bool TogleEveryFourSeconds;
+	FString SomeString = "This is a nested member";
 };
