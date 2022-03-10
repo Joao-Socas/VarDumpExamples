@@ -2,9 +2,7 @@
 
 #include "DumpObjectExample.h"
 #include "NestedDumpObject.h"
-
-//#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
-#include "VarDump.h"
+#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
 
 void GenerateRandomArray(TArray<TArray<TArray<int32>>>& RandomArray);
 void GenerateRandomDouble(double& RandomDouble);
@@ -41,10 +39,10 @@ void ADumpObjectExample::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	SecondsCounter += DeltaTime;
-	if (SecondsCounter > 10)
+	if (SecondsCounter > 6)
 	{
 		UpdatedTimes++;
-		SecondsCounter -= 10;
+		SecondsCounter -= 6;
 		GenerateRandomArray(RandomArray);
 		if (MySubobject)
 		{

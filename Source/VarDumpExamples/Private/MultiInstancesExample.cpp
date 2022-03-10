@@ -2,8 +2,7 @@
 
 #include "MultiInstancesExample.h"
 #include "DrawDebugHelpers.h"
-//#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
-#include "VarDump.h"
+#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
 
 // Sets default values
 AMultiInstancesExample::AMultiInstancesExample()

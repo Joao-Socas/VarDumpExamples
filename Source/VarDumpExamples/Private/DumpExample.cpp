@@ -1,8 +1,7 @@
 // Copyright 2021, João P. B. Socas. All Rights Reserved.
 
 #include "DumpExample.h"
-//#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
-#include "VarDump.h"
+#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
 
 // Sets default values
 ADumpExample::ADumpExample()
@@ -31,7 +30,7 @@ void ADumpExample::BeginPlay()
 	FVector4 MyFVector4 = FVector4(0, 0, 0, 0);
 	FRotator MyRotator = FRotator(0, 0, 0);
 	FQuat MyFQuat = FQuat(0, 0, 0, 1);
-	FTransform MyTransform = GetTransform(); 
+	FTransform MyTransform = GetTransform();
 	TArray<TArray<TArray<int32>>> MyNestedTarray{ {{1,2},{0}}, {{55}} };
 
 	VARDUMP("My const char*");
