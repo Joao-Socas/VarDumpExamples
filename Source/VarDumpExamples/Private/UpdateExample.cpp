@@ -1,7 +1,7 @@
 // Copyright 2021, João P. B. Socas. All Rights Reserved.
 
 #include "UpdateExample.h"
-#include "../Plugins/Marketplace/VarDump/Source/VarDump/Public/VarDump.h"
+#include "../Plugins/Marketplace/VarDumpPlus/Source/VarDump/Public/VarDump.h"
 
 
 // Sets default values
