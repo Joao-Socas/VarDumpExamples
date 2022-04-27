@@ -3,7 +3,6 @@
 #include "DumpExample.h"
 #include "../Plugins/Marketplace/VarDumpPlus/Source/VarDump/Public/VarDump.h"
 
-
 // Sets default values
 ADumpExample::ADumpExample()
 {
