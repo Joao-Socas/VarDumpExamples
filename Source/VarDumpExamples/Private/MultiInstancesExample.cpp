@@ -17,7 +17,12 @@ void AMultiInstancesExample::BeginPlay()
 {
 	Super::BeginPlay();
 	MyTransform = GetTransform();
+#if WITH_EDITOR
 	FString MyActorName = GetActorLabel();
+#else
+	FString MyActorName = GetName();
+#endif // WITH_EDITOR
+	
 	DrawDebugString(GetWorld(), MyTransform.GetLocation() + FVector(-80, 0 , 100), MyActorName, nullptr, FColor::Blue); // #include "DrawDebugHelpers.h"
 
 	VARDUMP(MyTransform, VARDUMP(MyActorName));

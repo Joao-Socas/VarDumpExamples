@@ -23,10 +23,18 @@ void ADumpObjectExample::BeginPlay()
 	MyInternalObject->APublicDoubleMember = 0;
 	if (MySubobject)
 	{
-		VARDUMPOBJECT(this, "Example", UpdatedTimes, RandomArray, 
-			VARDUMPOBJECT(MySubobject, MySubobject->GetActorLabel(), MySubobject->MyTransform, MySubobject->SomeString), 
+#if WITH_EDITOR // With editor we can use GetActorLabel
+		VARDUMPOBJECT(this, "Example", UpdatedTimes, RandomArray,
+			VARDUMPOBJECT(MySubobject, MySubobject->GetActorLabel(), MySubobject->MyTransform, MySubobject->SomeString),
 			VARDUMPOBJECT(MyInternalObject, "MyInternalObject", MyInternalObject->APublicDoubleMember, MyInternalObject->APublicFVector4Member)
 		);
+#else // Without editor we have to use the GetName from UObjects
+		VARDUMPOBJECT(this, "Example", UpdatedTimes, RandomArray,
+			VARDUMPOBJECT(MySubobject, MySubobject->GetName(), MySubobject->MyTransform, MySubobject->SomeString),
+			VARDUMPOBJECT(MyInternalObject, "MyInternalObject", MyInternalObject->APublicDoubleMember, MyInternalObject->APublicFVector4Member)
+		);
+#endif // WITH_EDITOR
+
 	}
 	else
 	{

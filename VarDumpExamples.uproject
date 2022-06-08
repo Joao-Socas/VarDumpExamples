@@ -16,7 +16,8 @@
 	"Plugins": [
 		{
 			"Name": "VarDump",
-			"Enabled": true
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/1e9d283c988a42409d66a6071b9d1e69"
 		}
 	]
 }
